@@ -1,0 +1,6 @@
+frame_0: room
+frame_1: hospital
+frame_2: hospital
+frame_3: hospital
+frame_4: hospital
+frame_5: hospital
