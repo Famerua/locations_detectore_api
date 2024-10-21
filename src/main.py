@@ -15,12 +15,10 @@ logging.basicConfig(
 
 dotenv.load_dotenv()
 
-FRAMES_DIR = "frames"
-API_URL = "https://api.openai.com/v1/chat/completions"
-API_KEY = os.getenv('token')
-VIDEO_PATH = "dining.mp4"  
-PDF_FILENAME = f"{VIDEO_PATH.split('.')[0]}.pdf"
-TEXT_FILENAME = f"locations_{VIDEO_PATH.split('.')[0]}.txt"
+FRAMES_DIR: str = os.getenv('FRAMES_DIR')
+VIDEO_PATH: str = os.getenv('VIDEO_PATH')
+PDF_FILENAME: str = f"{VIDEO_PATH.split('.')[0]}.pdf"
+TEXT_FILENAME: str = f"locations_{VIDEO_PATH.split('.')[0]}.txt"
 
 #step 1 
 def extract_frames(video_path, interval):
